@@ -1,13 +1,16 @@
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Library {
 
     private ArrayList<Bookn> books;
+    private HashMap<String, Bookn> booksByGenre;
     private int capacity;
 
     public Library(int capacity) {
         this.books = new ArrayList<>();
+        this.booksByGenre = new HashMap();
         this.capacity = capacity;
     }
 
